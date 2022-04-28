@@ -554,7 +554,7 @@ section {
   background: url("C:/Users/ELCOT/Documents/GitHub/pest_control/assets/img/pest.jpeg")
     center center no-repeat;
   background-size: cover;
-  border-radius: 5px;
+  border-radius: 10px;
   min-height: 400px;
 }
 @media (max-width: 991px) {
