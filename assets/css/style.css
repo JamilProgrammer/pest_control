@@ -551,8 +551,7 @@ section {
   margin-left: 60px;
 }
 .about .image {
-  background: url("C:/Users/ELCOT/Documents/GitHub/pest_control/assets/img/pest.jpeg")
-    center center no-repeat;
+  background: url("./assets/img/pest.jpeg") center center no-repeat;
   background-size: cover;
   border-radius: 10px;
   min-height: 400px;
