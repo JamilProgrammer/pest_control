@@ -235,7 +235,7 @@
           <div class="row no-gutters">
             <div
               class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-lg-start"
-            style="background: url('./assets/img/pest-2.jpeg') center center no-repeat;
+            style="background: url('./assets/img/pest-3.jpeg') center center no-repeat;
             background-size: cover;
             border-radius: 10px;
             min-height: 400px;">
@@ -1213,7 +1213,7 @@
               <div class="contact-email">
                 <i class="bi bi-envelope"></i>
                 <h3>Email</h3>
-                <p><a href="mailto:info@example.com">info@example.com</a></p>
+                <p><a href="mailto:info@example.com">pcspestkum@gmail.com</a></p>
               </div>
             </div>
           </div>
@@ -1222,7 +1222,7 @@
             <div class="col-md-6">
               <div class="form">
                 <form
-                  action="./forms/contact.php"
+                  action="./forms/sendMail.php"
                   method="post"
                   role="form"
                   class="php-email-form"
@@ -1243,11 +1243,11 @@
                       <input
                         type="email"
                         class="form-control"
-                        name="email"
+                        name="gmail"
                         id="email"
-                        placeholder="Your Email"
+                        placeholder="Your Gmail"
                         data-rule="email"
-                        data-msg="Please enter a valid email"
+                        data-msg="Please enter a valid Gmail"
                       />
                     </div>
                   </div>
@@ -1255,9 +1255,9 @@
                     <input
                       type="text"
                       class="form-control"
-                      name="subject"
+                      name="number"
                       id="subject"
-                      placeholder="Subject"
+                      placeholder="Mobile Number"
                       required
                     />
                   </div>
@@ -1270,15 +1270,9 @@
                       required
                     ></textarea>
                   </div>
-                  <div class="my-3">
-                    <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">
-                      Your message has been sent. Thank you!
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit">Send Message</button>
+                 
+                  <div class="text-center mt-4">
+                    <input type="submit" name="send" id="" class="btn btn-primary">
                   </div>
                 </form>
               </div>
@@ -1333,7 +1327,7 @@
                   Karthi, Kumbakonam,<br />
                   Tamil Nadu-612206<br /><br />
                   <strong>Phone:</strong> +91 97516 10008<br />
-                  <strong>Email:</strong> info@example.com<br />
+                  <strong>Email:</strong> pcspestkum@gmail.com<br />
                 </p>
                 <div class="social-links mt-3">
                   <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
