@@ -1222,7 +1222,7 @@
             <div class="col-md-6">
               <div class="form">
                 <form
-                  action="./forms/sendMail.php"
+                  action=""
                   method="post"
                   role="form"
                   class="php-email-form"
@@ -1270,11 +1270,28 @@
                       required
                     ></textarea>
                   </div>
+                 <div class="text-center mt-3">
+                   <!-- <input type="submit" name="send" class="btn btn-primary"> -->
+                   <button type="submit" name="send" class="btn btn-primary"> send</button>
+                 </div>
                  
-                  <div class="text-center mt-4">
-                    <input type="submit" name="send" id="" class="btn btn-primary">
-                  </div>
                 </form>
+                <?php
+if (isset($_POST['send'])) {
+    $to_email = "pcspestkum@gmail.com";
+    $subject = "Message from User";
+    $body ="\nNAME:".$_POST['name']."\nEMAIL ID:".$_POST['gmail']."\nCONTACT NO:\n".$_POST['number']."\nMESSAGE". $_POST['message'];
+    $headers = "From: sender\'s email";
+    $mail=mail($to_email, $subject, $body, $headers);
+    if($mail) {
+       
+        echo '<script>alert("Email Was Sent Sucessfully!");</script>';
+    } else {
+        echo '<script>alert("Email sending failed...");</script>';
+        
+    }
+}
+?>
               </div>
             </div>
             <div class="map col-lg-6 col-md-6 col-sm-6 pt-0">
